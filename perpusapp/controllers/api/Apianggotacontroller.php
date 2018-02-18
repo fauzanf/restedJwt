@@ -23,7 +23,7 @@ class Apianggotacontroller extends Restdata{
       //mengembalikan respon http ok 200 dengan data dari select di atas
       $this->response($data,Restdata::HTTP_OK);
     }else {
-        $this->notfound('Anggota Tidak Di Temukan');
+        $this->notfound('Anggota Tidak Di Temukan a');
 
     }
 

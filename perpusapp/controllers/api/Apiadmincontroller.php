@@ -28,7 +28,7 @@ class Apiadmincontroller extends Restdata{
       if ($this->mymodel->insertadmin($data)) {
 
         $this->response([
-          'message'=>'Admin Berhasil Di Buat'
+          'message'=>'Admin Berhasil Di Buat a'
         ],HTTP_OK);
 
       }else {
