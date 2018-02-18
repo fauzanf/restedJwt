@@ -1,0 +1,95 @@
+Api Url : http://localhost/perpusapi/Api
+
+default format : json
+
+
+-----------Anggota-------------
+
+
+
+GET
+
+/anggota										=>		get all anggota
+/anggota/format/?(xml,json,html)				=>		get all anggota dengan format(xml/json/html)
+/anggota/?(id)									=>		get anggota dengan spesific id
+/anggota/?(id)/format/?(xml,json,html)			=>		get anggota dengan spesific id dan format(xml/json/html)
+
+
+POST
+
+/anggota										=>		post anggota dengan column (nim,nama,jurusan)
+
+
+
+PUT
+
+/anggota/?(id)									=>		Update anggota dengan where id
+
+
+
+DELETE
+/anggota/?(id)									=>		delete anggota dengan where id
+
+
+
+---------buku-------------------
+
+GET
+
+/buku											=>		get all buku
+/buku/format/?(xml,json,html)					=>		get all buku dengan format(xml/json/html)
+/buku/?(id)										=>		get buku dengan spesifict id
+/buku/?(id)/format/?(xml,json,html)				=>		get buku dengan spesifict id dan dengan format(xml/json/html)
+
+
+
+POST
+
+/buku											=>		post buku dengan column(judul,pengarang,thn_terbit)
+
+
+PUT
+
+/buku/?(id)										=>		update buku dengan where id
+
+
+DELETE
+
+/buku/?(id)										=>		delete buku dengan where id
+
+
+
+
+
+---------pinjam-------------------
+
+GET
+/pinjam											=>		get all pinjam
+/pinjam/format/?(xml,json,html)					=>		get all pinjam dengan format xml/json/html
+/pinjam/?(id)									=>		get pinjam dengan where id
+/pinjam/?(id)/format/?(xml,json,html)			=>		get pinjam dengan where id dan dengan format(xml/json/html)
+
+POST
+/pinjam											=>		post pinjam dengn column(id_anggota,id_buku,denda(optional))
+
+PUT
+/pinjam/?(id)									=>		update pinjam dengan where id
+
+
+---------view token-------------
+
+POST
+/viewtoken										=>		view token berdasarkan data login(nama dan password)
+
+
+
+---------admin--------------
+
+POST
+
+/admin											=>		tambah admin baru
+
+
+
+
+
